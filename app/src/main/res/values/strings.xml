@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SecondRoom</string>
+
+    <string-array name="genderArray">
+        <item>Gender...</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>
