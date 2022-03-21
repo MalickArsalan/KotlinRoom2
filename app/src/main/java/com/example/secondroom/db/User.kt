@@ -6,15 +6,19 @@ import androidx.room.PrimaryKey
 import com.squareup.moshi.JsonClass
 import kotlinx.parcelize.Parcelize
 
-@Entity(tableName = "user")
-@Parcelize
-@JsonClass(generateAdapter = true)
+@Entity(tableName = "user_table")
+//@Parcelize
+//@JsonClass(generateAdapter = true)
 data class User (
-    @PrimaryKey(autoGenerate = true)
-    val id:Int,
+
     val firstName :String,
     val middleName :String,
     val lastName :String,
-    val age:Int,
+    val fatherName:String,
     val gender: String
-    ): Parcelable
+    )
+{
+
+    @PrimaryKey(autoGenerate = true)
+    var id:Int = 0
+}

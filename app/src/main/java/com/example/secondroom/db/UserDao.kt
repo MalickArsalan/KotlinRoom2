@@ -9,10 +9,10 @@ import androidx.room.Query
 @Dao
 interface UserDao {
 
-    @Query("SELECT * FROM User")
+    @Query("SELECT * FROM user_table")
     fun loadUser(): LiveData<List<User>>
 
     @Insert(onConflict = REPLACE)
-    suspend fun insertUser(user: User): Long
+    suspend fun insertUser(user: User)
 
 }
