@@ -1,9 +1,10 @@
-package com.example.secondroom
+package com.example.secondroom.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NavUtils
+import com.example.secondroom.R
 
 
 class RoomView : AppCompatActivity() {
